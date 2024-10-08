@@ -16,7 +16,7 @@ const Chatbot = () => {
       setQuestions(fetchedQuestions);
       // İlk soruyu hemen göster
       if (fetchedQuestions.length > 0) {
-        setMessages([{ type: 'question', text: fetchedQuestions[0].text }]);
+        setMessages([{ type: 'question', text: fetchedQuestions[0] }]);  // .text yerine doğrudan fetchedQuestions[0] kullanılıyor
       }
     };
     fetchQuestions();
@@ -30,20 +30,20 @@ const Chatbot = () => {
 
   const handleNext = async (answer) => {
     const currentQuestion = questions[currentQuestionIndex];
-
-    await saveAnswer(userId, currentQuestion.text, answer);
-
+  
+    await saveAnswer(userId, currentQuestion, answer);  // currentQuestion.text yerine currentQuestion gönderiyoruz
+  
     setMessages([...messages, { type: 'answer', text: answer }]);
-
+  
     const nextQuestionIndex = currentQuestionIndex + 1;
     if (nextQuestionIndex < questions.length) {
       setMessages((prevMessages) => [
         ...prevMessages,
-        { type: 'question', text: questions[nextQuestionIndex].text },
+        { type: 'question', text: questions[nextQuestionIndex] },  // .text yerine doğrudan string kullanıyoruz
       ]);
       setCurrentQuestionIndex(nextQuestionIndex);
     } else {
-      setChatEnded(true); // Sorular bittiğinde chat'i kapat
+      setChatEnded(true);  // Sorular bittiğinde chat'i kapat
     }
   };
 
