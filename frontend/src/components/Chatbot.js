@@ -48,7 +48,7 @@ const Chatbot = () => {
   };
 
   if (chatEnded) {
-    return <p>Chatbot kapandı. Teşekkürler!</p>; // Chat kapandığında gösterilecek mesaj
+    return <p>Chatbot is closed. Thanks!</p>; // Chat kapandığında gösterilecek mesaj
   }
 
   return (
@@ -63,7 +63,7 @@ const Chatbot = () => {
       {currentQuestionIndex < questions.length ? (
         <AnswerInput onSubmit={handleNext} />
       ) : (
-        <p>Konuşma sona erdi. Teşekkürler!</p>
+        <p>The conversation has ended. Thank you!</p>
       )}
     </div>
   );
