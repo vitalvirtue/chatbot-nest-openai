@@ -1,0 +1,83 @@
+/* App.css - Bileşen Bazlı Stillendirme */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Chatbot kutusunun görünümü */
+.chatbot-container {
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mesajlar */
+.message {
+  display: flex;
+  margin: 8px 0;
+  padding: 10px;
+  max-width: 70%;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sorular (sola hizalı) */
+.question {
+  align-self: flex-start;
+  background-color: #e8eaf6;
+  color: #3f51b5;
+  border-bottom-left-radius: 0;
+}
+
+/* Cevaplar (sağa hizalı) */
+.answer {
+  align-self: flex-end;
+  background-color: #d1c4e9;
+  color: #5e35b1;
+  border-bottom-right-radius: 0;
+}
+
+/* Input alanı */
+form {
+  display: flex;
+  margin-top: auto;
+  padding: 10px;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5e35b1;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4527a0;
+}
