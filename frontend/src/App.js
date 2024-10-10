@@ -1,6 +1,6 @@
-import React from 'react';
-import Chatbot from './components/Chatbot';
-import './App.css';  // Bileşen bazlı stiller burada
+import React from "react";
+import Chatbot from "./components/Chatbot";
+import "./App.css"; // Bileşen bazlı stiller burada
 
 function App() {
   return (

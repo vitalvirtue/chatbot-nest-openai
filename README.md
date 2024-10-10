@@ -1,9 +1,9 @@
-
 # Cat Chatbot
 
 This project is a **Chatbot** application developed using ReactJS and NestJS. It asks users 10 predefined questions and saves the answers in a MongoDB database. Optionally, dynamic questions can be generated using OpenAI integration.
 
 ## Table of Contents
+
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -13,6 +13,7 @@ This project is a **Chatbot** application developed using ReactJS and NestJS. It
 - [License](#license)
 
 ## Features
+
 - Asks the user 10 predefined questions.
 - Saves user responses in the MongoDB database.
 - Tracks user responses step by step.
@@ -22,38 +23,46 @@ This project is a **Chatbot** application developed using ReactJS and NestJS. It
 ## Installation
 
 ### Required Dependencies
+
 - Node.js
 - Nest
 - MongoDB
 - Git
 
 ### Step 1: Clone the Repository
+
 ```bash
 git clone https://github.com/vitalvirtue/chatbot-nest-openai.git
 cd cat-chatbot
 ```
 
 ### Step 2: Install Backend and Frontend Dependencies
+
 #### Backend:
+
 ```bash
 cd backend
 npm install
 ```
 
 #### Frontend:
+
 ```bash
 cd ../frontend
 npm install
 ```
 
 ### Step 3: Create the .env File
+
 In the backend directory, create a `.env` file with the following content:
+
 ```
 MONGODB_URI=mongodb://localhost:27017/chatbot-db
 OPENAI_API_KEY=your-openai-api-key-here  # If you're using OpenAI
 ```
 
 ### Step 4: Start MongoDB
+
 ```bash
 mongod
 ```
@@ -61,6 +70,7 @@ mongod
 or Start MongoDB Compass
 
 Don't Forget Sample User on users collection is :
+
 ```json
 {
   "userId": "user1",
@@ -71,17 +81,21 @@ Don't Forget Sample User on users collection is :
 ```
 
 ### Step 5: Start Backend and Frontend
+
 #### Backend:
+
 ```bash
 npm run start
 ```
 
 #### Frontend:
+
 ```bash
 npm start
 ```
 
 ### Step 6: Open the Application
+
 Go to `http://localhost:3000` in your browser. The Chatbot application will be running here.
 
 ## Usage
@@ -120,13 +134,16 @@ Shows the answers saved in the `chats` collection via MongoDB Compass or Shell.
 ![Database View](screenshots/database-view.png)
 
 ## Technologies
+
 - **Frontend**: ReactJS
 - **Backend**: NestJS
 - **Database**: MongoDB
 - **Optional**: OpenAI API
 
 ## Contributors
+
 - [Hayati Erdem Özkümüş](https://github.com/vitalvirtue) - Project Owner
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
