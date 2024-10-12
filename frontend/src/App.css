@@ -81,3 +81,58 @@ button {
 button:hover {
   background-color: #4527a0;
 }
+
+.chatbot-wrapper {
+  display: flex;
+}
+
+.chatbot-container {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message.question {
+  text-align: left;
+  color: blue;
+}
+
+.message.answer {
+  text-align: right;
+  color: green;
+}
+
+.session-list {
+  background-color: #f9f9f9;
+  border-right: 1px solid #ccc;
+  padding: 15px;
+}
+
+.session-list h2 {
+  text-align: center;
+  color: #4a90e2;
+}
+
+.session-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.session-list button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.session-list button:hover {
+  background-color: #45a049;
+}

@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const AnswerInput = ({ onSubmit }) => {
-  const [answer, setAnswer] = useState('');
+  const [answer, setAnswer] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (answer) {
       onSubmit(answer);
-      setAnswer('');  // Cevabı gönderdikten sonra inputu temizle
+      setAnswer(""); // Cevabı gönderdikten sonra inputu temizle
     }
   };
 
