@@ -15,7 +15,7 @@ const SessionList = ({ userId, shouldRefresh, onSessionSelected }) => {
 
   return (
     <div className="session-list">
-      <h2>Sohbet Geçmişi</h2>
+      <h2>Chat History</h2>
       <ul>
         {sessions.length > 0 ? (
           sessions.map((session) => (
@@ -37,7 +37,7 @@ const SessionList = ({ userId, shouldRefresh, onSessionSelected }) => {
             </li>
           ))
         ) : (
-          <p>Henüz bir sohbet bulunmamaktadır.</p>
+          <p>There is no chat yet.</p>
         )}
       </ul>
     </div>

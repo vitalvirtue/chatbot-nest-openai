@@ -119,7 +119,9 @@ Shows the chatbot's starting screen when the first question is asked.
 
 Shows the user's answer to a question and the next question being asked.
 
-![User Answer Screen](screenshots/user-answer.png)
+![User Answer Screen](screenshots/user-answer-01.png)
+
+![User Answer Screen](screenshots/user-answer-02.png)
 
 ### 3. **Chatbot End Screen**
 

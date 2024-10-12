@@ -89,7 +89,7 @@ const Chatbot = () => {
         ))}
         <AnswerInput onSubmit={handleNext} />
       </div>
-      <button onClick={startNewSession}>Yeni Oturum Başlat</button>
+      <button onClick={startNewSession}>Start a New Session</button>
     </div>
   );
 };
